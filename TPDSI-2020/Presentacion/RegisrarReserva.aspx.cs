@@ -11,7 +11,10 @@ namespace TPDSI_2020
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TxtDia.Text = DateTime.Now.Day.ToString();
+            TxtMes.Text = DateTime.Now.Month.ToString();
+            TxtAño.Text = DateTime.Now.Year.ToString();
+          
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -22,10 +25,12 @@ namespace TPDSI_2020
             Application["fecha"] = TxtDia.Text+"/"+TxtMes.Text+"/"+TxtAño.Text;  
             Application["hora"] = TxtHora.Text+" : "+TxtMinuto.Text;
             Application["perfilSector"] = CBPerfilSector.SelectedValue;
+            Application["comentario"] = TxtComentarios.Text;
 
             Response.Redirect("ConfirmacionReserva.aspx");
 
 
         }
+
     }
 }

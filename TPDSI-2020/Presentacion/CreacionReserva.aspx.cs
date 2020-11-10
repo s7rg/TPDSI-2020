@@ -13,8 +13,7 @@ namespace TPDSI_2020
         {
             TxtCant.Text = Application["cantidadComensales"].ToString();
             TxtHora.Text = Application["hora"].ToString();
-            TxtFecha.Text = Application["fecha"].ToString();
-            TxtMesa.Text = Application["mesa"].ToString();
+            TxtFecha.Text = Application["fecha"].ToString();           
             TxtComentario.Text = Application["comentario"].ToString();
 
         }

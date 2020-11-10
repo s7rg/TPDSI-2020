@@ -106,14 +106,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="ConfirmacionReserva.aspx" />
+    <Content Include="Presentacion\CreacionReserva.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Presentacion\RegisrarReserva.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -170,12 +170,15 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="ConfirmacionReserva.aspx.cs">
-      <DependentUpon>ConfirmacionReserva.aspx</DependentUpon>
+    <Compile Include="LogicaNegocio\Creada.cs" />
+    <Compile Include="LogicaNegocio\Estado.cs" />
+    <Compile Include="LogicaNegocio\Reserva.cs" />
+    <Compile Include="Presentacion\CreacionReserva.aspx.cs">
+      <DependentUpon>CreacionReserva.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ConfirmacionReserva.aspx.designer.cs">
-      <DependentUpon>ConfirmacionReserva.aspx</DependentUpon>
+    <Compile Include="Presentacion\CreacionReserva.aspx.designer.cs">
+      <DependentUpon>CreacionReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -184,12 +187,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Presentacion\RegisrarReserva.aspx.cs">
+      <DependentUpon>RegisrarReserva.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Presentacion\RegisrarReserva.aspx.designer.cs">
+      <DependentUpon>RegisrarReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
